@@ -37,7 +37,7 @@ def predict_genres(year, title, plot):
              "youve", 'your', 'yours', 'yourself', 'yourselves','left', 'dont', 'doesnt', 
              'im', 'hes', 'shes', 'isnt','wont','n']
 
-    nlp = spacy.load('es_core_web_sm')
+    nlp = spacy.load('es_core_news_sm')
     wordnet_lemmatizer = WordNetLemmatizer()
 
     def preprocess_plot(plot):
